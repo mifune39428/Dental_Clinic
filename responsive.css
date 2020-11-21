@@ -1,0 +1,83 @@
+@media (max-width: 768px) {
+	* {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header {
+		text-align: center;
+	}
+	.top {
+		float: none;
+	}
+	.right-header {
+		float: none;
+	}
+	.name {
+		position: relative;
+		top: -8px;
+	}
+	.number {
+		position: relative;
+		top: -15px;
+	}
+	.time {
+		width: 180px;
+		/* 横幅によってずれる */
+		position: relative;
+		top: -25px;
+		left: 255px;
+	}
+	.menu ul {
+		width: 110%;
+		padding-top: 150px;
+		/* 2列折返し */
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.menu ul::after {
+		/* リストの一番下を左寄せ */
+		content: "";
+		display: block;
+		width: 50%;
+		height: 0;
+	}
+	.menu li {
+		width: 40%;
+		/* 横幅いっぱいに表示 */
+		flex-grow: 1;
+	}
+	.main-img {
+		float: none;
+		padding-left: 15px;
+		position: absolute;
+	}
+	.new-info {
+		float: none;
+		position: absolute;
+		top: 700px;
+		left: 20px;
+	}
+	.left-menu {
+		/* フッターの上に移動。横幅いっぱい */
+		position: relative;
+		top: 800px;
+		left: 15px;
+	}
+	.menu-content h2, ul {
+		width: 728px;
+		box-sizing: border-box;
+	}
+	.footer-container {
+		position: relative;
+		top: 260px;
+	}
+	.footer-list {
+		margin-top: 550px;
+	}
+	.footer-details {
+		display: block;
+		text-align: right;
+	}
+	.footer-details li {
+		padding-right: 10px;
+}
